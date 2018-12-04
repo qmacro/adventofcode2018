@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const fs = require('fs');
 
-let year = 2017;
+let year = 2018;
 let startDay = 1;
 let endDay = 25;
 const args = process.argv.slice(2);
@@ -35,7 +35,7 @@ const showTestResult = (year, day, part, expected, actual, duration) => {
 }
 
 for(let day = startDay; day <= endDay; day++) {
-    const path = `./${year}/${("0" + day).slice(-2)}`;
+    const path = `./days/${("0" + day).slice(-2)}`;
     if (!fs.existsSync(path)) {
         console.log(chalk.red(`${year} day ${day} not found`));
         break;

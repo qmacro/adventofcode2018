@@ -6,5 +6,9 @@ describe("2018 day 1", function() {
         let solution = solve(part1TestInput, 1);
         expect(solution).toEqual(3);
     })
-
+    it ("solves the part 2 test case", function() {
+        const part2TestInput = "+1, -2, +3, +1".split(/, /);
+        let solution = solve(part2TestInput, 2);
+        expect(solution).toEqual(2);
+    })
 });
